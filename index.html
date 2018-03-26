@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dr.Bunny : Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="Dr.Bunny, Emergency, first aid" name="keywords">
+    <meta content="Mahesh Patil" name="author">
+    <meta content="Dr.Bunny : Admin Dashboard" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <link href="bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="bower_components/dropzone/dist/dropzone.css" rel="stylesheet">
+    <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="css/main4a76.css?version=4.3.0" rel="stylesheet">
+</head>
+
+
+<body class="full-screen menu-position-side menu-side-left">
+
+    <div class="all-wrapper solid-bg-all">
+        <div class="layout-w">
+            <div class="content-w">               
+  
+
+    <div class="content-i">
+        <div class="content-box">
+            <div class="support-index show-ticket-content">
+                <div class="support-tickets" id ="myDIV">
+                    <div class="support-tickets-header">
+                        <div class="tickets-control">
+                            <h5>Emergencies</h5>
+                            <div class="element-search">
+                                <input placeholder="Type to filter emergencies..." type="text">
+                            </div>
+                        </div>
+                        <div class="tickets-filter">
+                            <div class="form-group mr-3">
+                                <label class="d-none d-md-inline-block mr-2">Status</label>
+                                <select class="form-control-sm">
+                                    <option>Show All</option>
+                                    <option>Dispatched</option>
+                                    <option>Issue</option>
+                                    <option>Requested</option>
+                                    <option>Enroute</option>
+                                </select>
+                            </div>
+                            <div class="form-group mr-1">
+                                <label class="d-none d-md-inline-block mr-2">Emergencies</label>
+                                <select class="form-control-sm" id="Emergencies">
+                                        <option>All Emergencies</option>
+                                </select>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    
+                    <div class="support-ticket active">
+                        <div class="st-meta">
+                            <div class="badge badge-success-inverted">Dispatched</div>
+                            
+                            <div class="status-pill green">
+
+                            </div>
+                        </div>
+                        <div class="st-body">
+                            <div class="avatar">
+                                <img alt="" src="https://cdn.iconscout.com/public/images/icon/premium/png-512/heart-attack-32c49823e1e67e66-512x512.png">
+                            </div>
+                            <div class="ticket-content">
+                                <h6 class="ticket-title">Heart attack</h6>
+                                <div class="ticket-description">234/B8, Tower 9, Magarpatta city, Pune.</div>
+                            </div>
+                        </div>
+                        <div class="st-foot">
+                            <span class="label">Caller:</span>
+                            <a class="value with-avatar" href="#">
+                                <img alt="" src="https://blogs.timesofindia.indiatimes.com/wp-content/uploads/2015/11/Prasanna-Tantri.jpg">
+                                <span>Yash Sharma</span>
+                            </a>
+                            <span class="label">Time:</span>
+                            <span class="value">Today 10:00am</span>
+                        </div>
+                    </div>
+                    <div class="support-ticket">
+                        <div class="st-meta">
+                            <div class="badge  badge-danger-inverted">Issue</div>
+                           
+                            <div class="status-pill red">
+
+                            </div>
+                        </div>
+                        <div class="st-body">
+                            <div class="avatar">
+                                <img alt="" src="https://thedailywtf.com/images/remy/lit.png">
+                            </div>
+                            <div class="ticket-content">
+                                <h6 class="ticket-title">Building on Fire </h6>
+                                <div class="ticket-description">Athashri society, Magarpatta city road, Pune</div>
+                            </div>
+                        </div>
+                        <div class="st-foot">
+                            <span class="label">Caller:</span>
+                            <a class="value with-avatar" href="#">
+                                <img alt="" src="http://www.ncaer.org/uploads/people/large/people_profile_331.jpg">
+                                <span>Bhagyashri Patil</span>
+                            </a>
+                            <span class="label">Time:</span>
+                            <span class="value">Friday 12:00am</span>
+                        </div>
+                    </div>
+                    <div class="support-ticket">
+                        <div class="st-meta">
+                            <div class="badge badge-warning-inverted">Requested</div>
+                           
+                            <div class="status-pill yellow">
+
+                            </div>
+                        </div>
+                        <div class="st-body">
+                            <div class="avatar">
+                                <img alt="" src="http://80skiparty.com/wp-content/uploads/2017/12/coolest-road-accident-cartoon-accident-cartoon-cliparts-road-accident-cartoon.jpg">
+                            </div>
+                            <div class="ticket-content">
+                                <h6 class="ticket-title">Road accident</h6>
+                                <div class="ticket-description">NH-4, Near wakad bridge, Pune</div>
+                            </div>
+                        </div>
+                        <div class="st-foot">
+                            <span class="label">Caller:</span>
+                            <a class="value with-avatar" href="#">
+                                <img alt="" src="http://staging.newindianexpress.com/uploads/user/imagelibrary/2017/6/24/original/Raftaar-2.jpg">
+                                <span>Vinod Kumar</span>
+                            </a>
+                            <span class="label">Time:</span>
+                            <span class="value">Today 01:00am</span>
+                        </div>
+                    </div>
+                    <div class="support-ticket">
+                        <div class="st-meta">
+                            <div class="badge badge-primary-inverted">Enroute</div>
+                            
+                            <div class="status-pill blue">
+
+                            </div>
+                        </div>
+                        <div class="st-body">
+                            <div class="avatar">
+                                <img alt="" src="https://foxcitiesallergists.com/wp-content/uploads/2018/01/Asthma-Icon.png">
+                            </div>
+                            <div class="ticket-content">
+                                <h6 class="ticket-title">Asthma Attack</h6>
+                                <div class="ticket-description">C-9001, Tower 9, Amanora Town, Pune</div>
+                            </div>
+                        </div>
+                        <div class="st-foot">
+                            <span class="label">Caller:</span>
+                            <a class="value with-avatar" href="#">
+                                <img alt="" src="http://images.indianexpress.com/2015/09/poorva-joshipura-thumb.jpg">
+                                <span>Sakshi Mehta</span>
+                            </a>
+                            <span class="label">Time:</span>
+                            <span class="value">Today 02:00pm</span>
+                        </div>
+                    </div>
+                                    
+                   
+                    <div class="load-more-tickets">
+                        <a href="#">
+                            <span>Load More Emergencies...</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="support-ticket-content-w">
+
+                    <div class="support-ticket-content">
+                           
+
+
+                            <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="users-list-w" href="#">
+                                            <div class="user-w ">
+                                                <div class="user-avatar-w">
+                                                    <div class="user-avatar">
+                                                        <img alt="" src="https://www.motiongraphicstock.com/assets/images/png/559dd8e3dbe34.png">
+                                                    </div>
+                                                </div>
+                                                <div class="user-name">
+                                                   Nobel Hospital, Magarpatta city, Pune
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="users-list-w">
+                                           
+                                                
+                                                
+                                        <div class="element-box-content example-content">
+
+                                                <div class="user-role" style="text-align:center;">5 min away 
+                                                    
+                                                 </div>
+
+                                                <div class="progress">
+                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar" role="progressbar" style="width: 75%;"> 
+
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                            <div class="users-list-w">
+                                                    <div class="user-w ">
+                                                        <div class="user-avatar-w">
+                                                            <div class="user-avatar">
+                                                                <img alt="" src="https://cdn.iconscout.com/public/images/icon/premium/png-512/healthcare-hospital-location-medicine-navigation-pin-pointer-3e60d604eb1a2ee4-512x512.png">
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name">
+                                                                234/B8, Tower 9, Magarpatta city, Pune.
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="users-list-w" href="#">
+                                                <div class="user-w ">
+                                                    <div class="user-avatar-w">
+                                                        <div class="user-avatar">
+                                                            <img alt="" src="https://www.surrogatefinder.com/Photo/small_surrogates_9d66371fdae3f2e85d4369d7168ad43e.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-name">
+                                                        <h6 class="user-title">Vijay Kamble</h6>                                                        
+                                                        <div class="user-role">Driver</div>
+                                                        <div class="user-role">   +91 9876543210</div>
+                                                     
+
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                           
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <div class="users-list-w" href="#">
+                                                        <div class="user-w ">
+                                                            <div class="user-avatar-w">
+                                                                <div class="user-avatar">
+                                                                    <img alt="" src="https://blogs.timesofindia.indiatimes.com/wp-content/uploads/2015/11/Prasanna-Tantri.jpg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="user-name">
+                                                                <h6 class="user-title">Yash Sharma</h6>
+                                                                <div class="user-role">Caller</div>
+                                                                <div class="user-role">   +91 9901243210</div>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                    </div>
+
+
+                                <div id="map" style="width:auto;height:400px;background:yellow"></div>
+
+                                <script>
+                                function myMap() {
+                                var mapOptions = {
+                                    center: new google.maps.LatLng(51.5, -0.12),
+                                    zoom: 15,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                }
+                                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                                }
+                                </script>
+
+                                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+                                </script>
+
+
+                       
+                    </div>
+
+                    
+                       
+                    
+
+                    <div class="element-box-tp">
+
+                           
+                            <div class="users-list-w" href="#">
+                                    <div class="user-w ">
+                                        <div class="user-avatar-w">
+                                            <div class="user-avatar">
+                                                <img alt="" src="https://cdn.iconscout.com/public/images/icon/premium/png-512/heart-attack-32c49823e1e67e66-512x512.png">
+                                            </div>
+                                        </div>
+                                        <div class="user-name">
+                                            <h3 class="user-title">Heart Attack</h3>
+                                            <div class="status-pill green" > </div> 
+                                            INP000949 
+                                            <div class="badge badge-success-inverted" style="text-align:center;">Dispatched</div>
+                                                
+                                            
+                                            <div class="user-role" >Today 10am, 26th March 2018</div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>
+
+
+                             <br/>
+                             <br/>
+                             <br/>
+
+                        <div class="activity-boxes-w">
+
+                            <div class="activity-box-w">
+                                <div class="activity-time">10 AM</div>
+                                <div class="activity-box">
+                                    <div class="activity-avatar">
+                                        <img alt="" src="https://www.motiongraphicstock.com/assets/images/png/559dd8e3dbe34.png">
+                                    </div>
+                                    <div class="activity-info">
+                                            <div class="activity-role">Nobel Hospital, Magarpatta city, Pune.</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-box-w">
+                                <div class="activity-time">10:04 AM</div>
+                                <div class="activity-box">
+                                   
+                                        <div class="activity-info">
+                                            <div class="activity-role">South gate</div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-box-w">
+                                    <div class="activity-time">10:12 AM</div>
+                                    <div class="activity-box">
+                                       
+                                            <div class="activity-info">
+                                                <div class="activity-role">Magarpatta inncer ciecle</div>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-box-w">
+                                            <div class="activity-time">10:15 AM</div>
+                                            <div class="activity-box">
+                                               
+                                                    <div class="activity-info">
+                                                        <div class="activity-role">Tower 9 gate</div>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                    <div class="activity-box-w">
+                                            <div class="activity-time">10:17 AM</div>
+                                            <div class="activity-box">
+                                                <div class="activity-avatar">
+                                                    <img alt="" src="https://cdn.iconscout.com/public/images/icon/premium/png-512/healthcare-hospital-location-medicine-navigation-pin-pointer-3e60d604eb1a2ee4-512x512.png">
+                                                </div>
+                                                    <div class="activity-info">
+                                                            <div class="activity-role">234/B8, Tower 9, Magarpatta city, Pune.</div>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                  
+                                    </div>
+                                </div>
+
+
+                               
+
+                                                
+                </div>
+                
+            </div>
+                     
+    </div>
+    </div>
+    </div>
+    </div>
+    
+   
+
+    </div>
+
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="bower_components/ckeditor/ckeditor.js"></script>
+    <script src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
+    <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <script src="bower_components/dropzone/dist/dropzone.js"></script>
+    <script src="bower_components/editable-table/mindmup-editabletable.js"></script>
+    <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/dist/popover.js"></script>
+    <script src="js/demo_customizer4a76.js?version=4.3.0"></script>
+    <script src="js/main4a76.js?version=4.3.0"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+
+    
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("support-ticket");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+        
+    
+    </body>
+
+</html>
